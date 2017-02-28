@@ -26,13 +26,18 @@ class MhmCustomizeTwentyseventeen
 
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', array($this, 'addScripts'), 20);
+        add_action('wp_enqueue_scripts', array($this, 'enqueue'));
+        add_action('wp_enqueue_scripts', array($this, 'dequeue'), 20);
     }
-    public function addScripts()
+
+    public function dequeue()
     {
         wp_deregister_style('twentyseventeen-fonts');
-        wp_deregister_style('twentyseventeen-style');
-        wp_register_style('twentyseventeen-style', plugins_url('assets/dist/css/wcbrn.css', __FILE__));
+    }
+
+    public function enqueue()
+    {
+        wp_enqueue_style('wcbrn', plugins_url('Foundation/dist/assets/css/app.css', __FILE__), array('twentyseventeen-style'));
     }
 }
 
