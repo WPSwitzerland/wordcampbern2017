@@ -1,0 +1,33 @@
+@media screen and (min-width: 48em) {
+    .has-header-image.twentyseventeen-front-page .custom-header,
+    .has-header-video.twentyseventeen-front-page .custom-header,
+    .has-header-image.home.blog .custom-header,
+    .has-header-video.home.blog .custom-header {
+        height: 60vh;
+    }
+}
+
+body.has-header-image .site-title,
+body.has-header-video .site-title,
+body.has-header-image .site-title a,
+body.has-header-video .site-title a {
+    text-shadow: 0 0 1rem rgba(#000, .4);
+}
+
+.navigation-top {
+    background-color: transparent;
+    border: none;
+}
+
+.main-navigation {
+    .menu-scroll-down {
+        display: none;
+    }
+    .menu-main-menu-container .menu {
+        display: flex;
+        justify-content: center;
+        > li {
+            display: inline-block;
+        }
+    }
+}

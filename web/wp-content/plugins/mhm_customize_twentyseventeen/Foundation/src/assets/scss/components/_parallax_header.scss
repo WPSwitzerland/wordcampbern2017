@@ -1,0 +1,40 @@
+#page {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.site-header {
+    height: 60vh;
+}
+
+.custom-header {
+    height: 60vh;
+    overflow: hidden;
+}
+
+.custom-header-media,
+.site-branding {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.site-branding {
+    transform: translateZ(-1px) scale(2);
+    top: 50%;
+}
+
+.custom-header-media {
+    transform: translateZ(-2px) scale(5);
+}
+
+.has-header-image .custom-header-media img,
+.has-header-video .custom-header-media video,
+.has-header-video .custom-header-media iframe,
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+    object-position: 50% 100%;
+}
