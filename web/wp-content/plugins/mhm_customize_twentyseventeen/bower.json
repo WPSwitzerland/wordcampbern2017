@@ -1,0 +1,20 @@
+{
+  "name": "mhm_customize_twentyseventeen",
+  "version": "1.0.0",
+  "authors": [
+    "Mark Howells-Mead <permanent.tourist@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://foundation.zurb.com",
+  "dependencies": {
+    "foundation-sites": "^6.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "private": true
+}
