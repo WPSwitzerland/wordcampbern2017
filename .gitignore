@@ -1,0 +1,37 @@
+#v 1.5.0
+*.log
+.codekit-cache
+.sass-cache
+.DS_Store
+.codekit-cache
+.sass-cache
+bower_components
+node_modules
+/.vagrant
+/vendor
+/web/composer.json
+/web/index.php
+/web/license.txt
+/web/liesmich.html
+/web/readme.html
+/web/maintenance
+/web/wp-activate.php
+/web/wp-admin
+/web/wp-blog-header.php
+/web/wp-comments-post.php
+/web/wp-config.php
+/web/wp-config-sample.php
+/web/wp-content/*
+/web/wp-cron.php
+/web/wp-includes
+/web/wp-links-opml.php
+/web/wp-load.php
+/web/wp-login.php
+/web/wp-mail.php
+/web/wp-settings.php
+/web/wp-signup.php
+/web/wp-trackback.php
+/web/xmlrpc.php
+/web/wp-content/languages
+/web/wp-content/uploads
+# Custom
