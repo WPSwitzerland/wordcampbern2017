@@ -6,7 +6,7 @@
     "require": {
         "johnpbloch/wordpress": "^4.7",
         "wpackagist-plugin/advanced-custom-fields": "^4.4",
-        "wpackagist-plugin/google-analytics-for-wordpress": "^5.5"
+        "wpackagist-plugin/google-analytics-for-wordpress": "^6.0"
     },
     "extra": {
         "wordpress-install-dir": "web",
