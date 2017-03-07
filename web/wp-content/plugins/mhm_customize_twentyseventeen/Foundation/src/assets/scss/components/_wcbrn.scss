@@ -11,7 +11,7 @@ body.has-header-image .site-title,
 body.has-header-video .site-title,
 body.has-header-image .site-title a,
 body.has-header-video .site-title a {
-    text-shadow: 0 0 1rem rgba(#000, .4);
+    text-shadow: 0 0 .5rem rgba(#000, .75);
 }
 
 .navigation-top {
@@ -28,6 +28,43 @@ body.has-header-video .site-title a {
         justify-content: center;
         > li {
             display: inline-block;
+            background: rgba($body-background, .75);
+            margin: 0 .0625rem;
+            &:hover {
+                background: rgba($body-background, .85);
+            }
+            &.current-menu-item {
+                background: $body-background;
+                color: $primary-color;
+                font-weight: 600;
+            }
         }
     }
+}
+
+.navigation-top {
+    a {
+        padding: .75em 1.5em;
+    }
+    a:hover {
+        color: $anchor-color;
+    }
+    :not(.current-menu-item) > a {
+        font-weight: 300;
+    }
+    .current-menu-item > a {
+        color: $anchor-color;
+    }
+    @media screen and (min-width: 67em) {
+        font-size: 1.25em;
+    }
+    .wrap {
+        @media screen and (min-width: 67em) {
+            padding: 0 2em;
+        }
+    }
+}
+
+.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+    margin-bottom: 0 !important;
 }
