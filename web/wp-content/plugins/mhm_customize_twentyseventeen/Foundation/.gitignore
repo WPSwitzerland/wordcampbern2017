@@ -2,7 +2,7 @@
 node_modules
 npm-debug.log
 bower_components
-dist
+#dist
 *.swp
 src/layouts
 src/pages
