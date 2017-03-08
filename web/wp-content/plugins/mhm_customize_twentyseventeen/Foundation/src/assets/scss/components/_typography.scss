@@ -4,6 +4,12 @@
 .site-footer .widget-area a,
 .posts-navigation a,
 .widget_authors a strong {
+    color: $anchor-color;
     box-shadow: none;
     border-bottom: 1px solid $anchor-color;
+    &:hover {
+        color: $anchor-color-hover;
+        box-shadow: none;
+        border-bottom-color: $anchor-color-hover;
+    }
 }
