@@ -1,0 +1,9 @@
+.entry-content a,
+.entry-summary a,
+.widget a,
+.site-footer .widget-area a,
+.posts-navigation a,
+.widget_authors a strong {
+    box-shadow: none;
+    border-bottom: 1px solid $anchor-color;
+}
