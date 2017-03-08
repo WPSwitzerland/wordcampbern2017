@@ -94,11 +94,9 @@
         }
     }
     &.site-navigation-fixed {
-        padding-top: 1rem;
-        &:before {
-            transition: all 600ms ease-in;
-            background-color: rgba($body-background, .85);
-            box-shadow: 0 0 0.25rem rgba($black,.2)
-        }
+        margin-top: 1rem;
+        transition: all 600ms ease-in;
+        background-color: rgba($body-background, .85);
+        box-shadow: 0 0 0.25rem rgba($black,.2)
     }
 }
