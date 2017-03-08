@@ -92,10 +92,11 @@
         }
     }
     &.site-navigation-fixed {
+        padding-top: 1rem;
         &:before {
             transition: background 600ms ease-in;
             background-color: rgba($body-background, .85);
-            border-bottom: .125rem solid rgba($black, 0.1);
+            box-shaow: 0 .125rem .125rem rgba($black, 0.1);
         }
     }
 }
