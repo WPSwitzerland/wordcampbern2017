@@ -15,15 +15,13 @@
             }
             &.current-menu-item {
                 background: $primary-color;
-                color: $body-background;
                 font-weight: 600;
+                > a {
+                    color: $body-background;
+                }
             }
         }
     }
-}
-
-.site-content-contain {
-    border-top: 1px solid $primary-color;
 }
 
 /**
