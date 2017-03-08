@@ -94,9 +94,8 @@
         }
     }
     &.site-navigation-fixed {
-        margin-top: 1rem;
         transition: all 600ms ease-in;
         background-color: rgba($body-background, .85);
-        box-shadow: 0 0 0.25rem rgba($black,.2)
+        box-shadow: 0 0.125rem 0.125rem rgba($black, 0.2);
     }
 }
