@@ -14,12 +14,16 @@
                 translate: transformY(-.125rem);
             }
             &.current-menu-item {
-                background: $body-background;
-                color: $primary-color;
+                background: $primary-color;
+                color: $body-background;
                 font-weight: 600;
             }
         }
     }
+}
+
+.site-content-contain {
+    border-top: 1px solid $primary-color;
 }
 
 /**
