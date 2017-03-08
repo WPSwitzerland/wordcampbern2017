@@ -95,7 +95,7 @@
     }
     border: none;
     a {
-        padding: .75em 1.5em;
+        padding: .5em;
     }
     a:hover {
         color: $anchor-color;
@@ -106,9 +106,6 @@
     .current-menu-item > a {
         color: $anchor-color;
     }
-    @media screen and (min-width: 67em) {
-        font-size: 1.25em;
-    }
     .wrap {
         @media screen and (min-width: 67em) {
             padding: 0 2em;
@@ -118,6 +115,7 @@
         &:before {
             transition: background 600ms ease-in;
             background-color: rgba($white, .85);
+            border-bottom: 1px solid $body-background;
         }
     }
 }
