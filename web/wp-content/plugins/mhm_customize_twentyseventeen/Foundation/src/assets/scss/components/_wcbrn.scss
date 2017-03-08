@@ -24,6 +24,15 @@
     }
 }
 
+.has-header-image .custom-header-media img,
+.has-header-video .custom-header-media video,
+.has-header-video .custom-header-media iframe,
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+    position: fixed;
+    object-fit: contain;
+    object-position: top center;
+}
+
 // body.has-header-image .site-title,
 // body.has-header-video .site-title,
 // body.has-header-image .site-title a,
