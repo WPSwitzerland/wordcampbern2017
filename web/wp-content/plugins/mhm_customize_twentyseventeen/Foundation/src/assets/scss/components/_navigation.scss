@@ -1,8 +1,5 @@
 .main-navigation {
     font-size: 1rem;
-    .menu-scroll-down {
-        display: none;
-    }
     .menu-main-menu-container .menu {
         display: flex;
         justify-content: flex-start;
@@ -23,6 +20,20 @@
             }
         }
     }
+}
+
+.has-header-image.twentyseventeen-front-page .custom-header,
+.has-header-video.twentyseventeen-front-page .custom-header,
+.has-header-image.home.blog .custom-header,
+.has-header-video.home.blog .custom-header {
+    max-height: 32.5rem !important;
+}
+
+.has-header-image.twentyseventeen-front-page .custom-header-media,
+.has-header-video.twentyseventeen-front-page .custom-header-media,
+.has-header-image.home.blog .custom-header-media,
+.has-header-video.home.blog .custom-header-media {
+    height: 32.5rem !important;
 }
 
 .navigation-top {
