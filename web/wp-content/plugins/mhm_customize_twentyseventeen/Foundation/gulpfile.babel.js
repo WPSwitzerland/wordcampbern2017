@@ -26,13 +26,13 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-    gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+    gulp.series(clean, gulp.parallel(sass, javascript, images, copy)));
 
-// Build the site, run the server, and watch for file changes
+// Build the site and watch for file changes
 gulp.task('default',
-    gulp.series('build', server, watch));
+    gulp.series('build', watch));
 
-// Build the site, run the server, and watch for file changes
+// Build the Sass files
 gulp.task('sass', sass);
 
 // Delete the "dist" folder
@@ -46,33 +46,6 @@ function clean(done) {
 function copy() {
     return gulp.src(PATHS.assets)
         .pipe(gulp.dest(PATHS.dist + '/assets'));
-}
-
-// Copy page templates into finished HTML files
-function pages() {
-    return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
-        .pipe(panini({
-            root: 'src/pages/',
-            layouts: 'src/layouts/',
-            partials: 'src/partials/',
-            data: 'src/data/',
-            helpers: 'src/helpers/'
-        }))
-        .pipe(gulp.dest(PATHS.dist));
-}
-
-// Load updated HTML templates and partials into Panini
-function resetPages(done) {
-    panini.refresh();
-    done();
-}
-
-// Generate a style guide from the Markdown content and HTML template in styleguide/
-function styleGuide(done) {
-    sherpa('src/styleguide/index.md', {
-        output: PATHS.dist + '/styleguide.html',
-        template: 'src/styleguide/template.html'
-    }, done);
 }
 
 // Compile Sass into CSS
@@ -119,28 +92,9 @@ function images() {
         .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
-// Start a server with BrowserSync to preview the site in
-function server(done) {
-    browser.init({
-        server: PATHS.dist,
-        port: PORT
-    });
-    done();
-}
-
-// Reload the browser with BrowserSync
-function reload(done) {
-    browser.reload();
-    done();
-}
-
-// Watch for changes to static assets, pages, Sass, and JavaScript
+// Watch for changes to static assets, Sass, and JavaScript
 function watch() {
     gulp.watch(PATHS.assets, copy);
-    // gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
-    // gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
     gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
     gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-    // gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-    // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
