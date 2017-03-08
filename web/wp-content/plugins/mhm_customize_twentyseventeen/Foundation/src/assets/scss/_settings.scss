@@ -67,8 +67,8 @@ $body-font-family: Merriweather, Georgia, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 300;
+$global-weight-bold: 700;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
@@ -105,7 +105,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
