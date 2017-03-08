@@ -26,7 +26,7 @@ class MhmCustomizeTwentyseventeen
 
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', array($this, 'enqueue'));
+        add_action('wp_enqueue_scripts', array($this, 'enqueue'), 10);
         add_action('wp_enqueue_scripts', array($this, 'dequeue'), 20);
     }
 

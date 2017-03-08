@@ -1,45 +1,37 @@
-html, body {
-    height: 100vh;
-    overflow: hidden;
-}
+// html, body {
+//     height: 100vh;
+//     overflow: hidden;
+// }
 
-#page {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+// #page {
+//     perspective: 1px;
+//     height: 100vh;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+// }
 
-.site-header {
-    height: 60vh;
-}
+// .custom-header-media,
+// .site-branding {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+// }
 
-.custom-header {
-    height: 60vh;
-    overflow: hidden;
-}
+// .site-branding {
+//     //transform: translateZ(-1px) scale(2);
+//     //top: 50%;
+//     margin-bottom: 0 !important;
+// }
 
-.custom-header-media,
-.site-branding {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+// .custom-header-media {
+//     transform: translateZ(-0.5px) scale(2) translateY(-3rem);
+// }
 
-.site-branding {
-    transform: translateZ(-1px) scale(2);
-    top: 50%;
-}
-
-.custom-header-media {
-    transform: translateZ(-2px) scale(5);
-}
-
-.has-header-image .custom-header-media img,
-.has-header-video .custom-header-media video,
-.has-header-video .custom-header-media iframe,
-.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
-    object-position: 50% 100%;
-}
+// .has-header-image .custom-header-media img,
+// .has-header-video .custom-header-media video,
+// .has-header-video .custom-header-media iframe,
+// .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+//     object-position: 50% 50%;
+// }
