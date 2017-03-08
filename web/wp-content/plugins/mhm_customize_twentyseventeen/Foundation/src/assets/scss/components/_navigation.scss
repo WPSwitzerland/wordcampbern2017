@@ -22,6 +22,16 @@
     }
 }
 
+/**
+ * Don't fix the image on the start page
+ * and constrain its height to match other pages.
+ */
+.has-header-image .custom-header-media img,
+.has-header-video .custom-header-media video,
+.has-header-video .custom-header-media iframe {
+    position: static;
+}
+
 .has-header-image.twentyseventeen-front-page .custom-header,
 .has-header-video.twentyseventeen-front-page .custom-header,
 .has-header-image.home.blog .custom-header,
