@@ -13,3 +13,20 @@
         border-bottom-color: $anchor-color-hover;
     }
 }
+
+.page {
+    .entry-header {
+        position: relative;
+    }
+
+    .entry-title {
+        transform: rotate(-90deg) translateX(-90%);
+        transform-origin: left;
+        font-size: 3em;
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0rem;
+        text-align: right;
+    }
+}
