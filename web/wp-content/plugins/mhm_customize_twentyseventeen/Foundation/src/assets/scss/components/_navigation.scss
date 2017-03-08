@@ -42,8 +42,17 @@
 .has-header-image.twentyseventeen-front-page .custom-header-media,
 .has-header-video.twentyseventeen-front-page .custom-header-media,
 .has-header-image.home.blog .custom-header-media,
-.has-header-video.home.blog .custom-header-media {
+.has-header-video.home.blog .custom-header-media,
+.has-header-image.twentyseventeen-front-page .wp-custom-header,
+.has-header-video.twentyseventeen-front-page .wp-custom-header,
+.has-header-image.home.blog .wp-custom-header,
+.has-header-video.home.blog .wp-custom-header {
     height: 32.5rem !important;
+}
+
+.site-header .navigation-top .menu-scroll-down {
+    top: -.5em;
+    color: $body-background;
 }
 
 .navigation-top {
@@ -85,8 +94,8 @@
     &.site-navigation-fixed {
         &:before {
             transition: background 600ms ease-in;
-            background-color: rgba($white, .85);
-            border-bottom: 1px solid $body-background;
+            background-color: rgba($body-background, .85);
+            border-bottom: .125rem solid rgba($black, 0.1);
         }
     }
 }
