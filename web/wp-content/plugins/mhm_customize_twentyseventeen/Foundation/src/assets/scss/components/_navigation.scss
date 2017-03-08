@@ -2,7 +2,7 @@
     font-size: 1rem;
     .menu-main-menu-container .menu {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         > li {
             display: inline-block;
             position: relative;
@@ -94,9 +94,9 @@
     &.site-navigation-fixed {
         padding-top: 1rem;
         &:before {
-            transition: background 600ms ease-in;
+            transition: all 600ms ease-in;
             background-color: rgba($body-background, .85);
-            box-shaow: 0 .125rem .125rem rgba($black, 0.1);
+            box-shadow: 0 0.125rem 0.125rem rgba($black,.1)
         }
     }
 }
