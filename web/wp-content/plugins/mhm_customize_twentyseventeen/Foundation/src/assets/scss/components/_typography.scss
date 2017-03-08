@@ -18,8 +18,10 @@
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
     text-transform: none;
+    letter-spacing: 0;
+    color: $dark-gray;
     font-size: rem-calc(18px);
     @include breakpoint(medium){
-        font-size: rem-calc(28px);
+        font-size: rem-calc(36px);
     }
 }
