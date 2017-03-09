@@ -1,10 +1,12 @@
 .site-branding .wrap:before {
 
-    bottom: 200%;
     display: inline-block;
     content: '';
     background: url('https://2017.bern.wordcamp.org/files/2017/03/logo_negative@2x.png') center/contain no-repeat;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200%;
     z-index: 10;
     width: rem-calc(200px);
     height: rem-calc(245px);
