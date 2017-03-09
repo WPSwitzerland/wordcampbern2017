@@ -2,13 +2,8 @@
     margin-bottom: 0 !important;
 }
 
-@media screen and (min-width: 30em) {
-    .site-branding {
-        padding: 20vh 0;
-    }
-}
-
-.site-branding .wrap {
-    position: absolute !important;
-    bottom: 6rem;
+@media screen and (min-width: 48em){
+	.panel-image {
+		height: 32.5rem;
+	}
 }
