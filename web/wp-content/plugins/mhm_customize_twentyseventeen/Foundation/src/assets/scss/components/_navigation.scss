@@ -25,7 +25,7 @@
 }
 
 .site-branding {
-    padding: 20vh 0 !important;
+    padding: 16rem 0 !important;
     top: 0;
     height: 100%;
     .wrap {
@@ -81,7 +81,7 @@
 .has-header-video.twentyseventeen-front-page .custom-header,
 .has-header-image.home.blog .custom-header,
 .has-header-video.home.blog .custom-header {
-    max-height: 32.5rem !important;
+    max-height: rem-calc(580px) !important;
 }
 
 .has-header-image.twentyseventeen-front-page .custom-header-media,
@@ -92,7 +92,7 @@
 .has-header-video.twentyseventeen-front-page .wp-custom-header,
 .has-header-image.home.blog .wp-custom-header,
 .has-header-video.home.blog .wp-custom-header {
-    height: 32.5rem !important;
+    height: rem-calc(580px) !important;
 }
 
 .site-header .navigation-top .menu-scroll-down {
