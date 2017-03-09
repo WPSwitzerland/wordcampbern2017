@@ -14,7 +14,8 @@
 
     @include breakpoint(medium){
         top: 50%;
-        right: 10vw;
+        left: auto;
+        right: 0;
         transform: translateY(-50%);
     }
 }
