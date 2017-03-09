@@ -12,6 +12,15 @@
     filter: drop-shadow( 0 0 .5rem $black );
 }
 
+.site-branding {
+    padding: 0 !important;
+    .wrap {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .main-navigation {
     font-size: 1rem;
     .menu-main-menu-container .menu {
