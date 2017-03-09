@@ -1,15 +1,20 @@
-.custom-header:before {
+.site-branding .wrap:before {
+
+    bottom: 200%;
     display: inline-block;
     content: '';
     background: url('https://2017.bern.wordcamp.org/files/2017/03/logo_negative@2x.png') center/contain no-repeat;
     position: absolute;
-    top: 50%;
-    right: 10vw;
     z-index: 10;
     width: rem-calc(200px);
     height: rem-calc(245px);
-    transform: translateY(-50%);
     filter: drop-shadow( 0 0 .5rem $black );
+
+    @include breakpoint(medium){
+        top: 50%;
+        right: 10vw;
+        transform: translateY(-50%);
+    }
 }
 
 .site-branding {
@@ -17,9 +22,13 @@
     top: 0;
     height: 100%;
     .wrap {
+        top: 150%;
         position: relative;
-        top: 50%;
-        transform: translateY(calc(-50% + 3rem));
+        @include breakpoint(medium){
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
     }
 }
 
