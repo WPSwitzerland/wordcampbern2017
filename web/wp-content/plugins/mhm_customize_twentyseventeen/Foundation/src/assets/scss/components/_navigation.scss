@@ -15,6 +15,10 @@
     @include breakpoint(medium){
         top: 50%;
         left: auto;
+        right: 1vw;
+        transform: translateY(-50%);
+    }
+    @include breakpoint(large){
         right: 0;
         transform: translateY(-50%);
     }
