@@ -42,23 +42,25 @@
 .main-navigation {
     font-size: 1rem;
     .menu-main-menu-container .menu {
-        display: flex;
-        justify-content: center;
-        > li {
-            display: inline-block;
-            position: relative;
-            background: rgba($body-background, .95);
-            margin: 0 .0625rem;
-            &:hover {
-                background: rgba($body-background, .85);
-                transition: transform 300ms ease-out;
-                translate: transformY(-.125rem);
-            }
-            &.current-menu-item {
-                background: $primary-color;
-                font-weight: 600;
-                > a {
-                    color: $body-background;
+        @include breakpoint(medium){
+            display: flex;
+            justify-content: center;
+            > li {
+                display: inline-block;
+                position: relative;
+                background: rgba($body-background, .95);
+                margin: 0 .0625rem;
+                &:hover {
+                    background: rgba($body-background, .85);
+                    transition: transform 300ms ease-out;
+                    translate: transformY(-.125rem);
+                }
+                &.current-menu-item {
+                    background: $primary-color;
+                    font-weight: 600;
+                    > a {
+                        color: $body-background;
+                    }
                 }
             }
         }
