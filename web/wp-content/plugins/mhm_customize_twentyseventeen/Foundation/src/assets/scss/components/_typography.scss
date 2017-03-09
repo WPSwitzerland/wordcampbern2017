@@ -34,6 +34,11 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
     border-radius: .25rem;
 }
 
+// We already have a page header image, so force-hide any additional post/page thumbnail
+.single-featured-image-header {
+    display: none !important;
+}
+
 .wcorg-organizer-description .avatar {
     float: right;
     margin: 0 0 1rem 1rem;
