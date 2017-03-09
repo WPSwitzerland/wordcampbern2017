@@ -1,3 +1,17 @@
+.custom-header:before {
+    display: inline-block;
+    content: '';
+    background: url('https://2017.bern.wordcamp.org/files/2017/03/logo_negative@2x.png') center/contain no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    z-index: 10;
+    width: rem-calc(200px);
+    height: rem-calc(245px);
+    transform: translateY(-50%);
+    filter: drop-shadow( 0 0 .5rem $black );
+}
+
 .main-navigation {
     font-size: 1rem;
     .menu-main-menu-container .menu {
