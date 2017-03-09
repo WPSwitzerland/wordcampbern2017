@@ -1,5 +1,4 @@
 .site-branding .wrap:before {
-
     display: inline-block;
     content: '';
     background: url('https://2017.bern.wordcamp.org/files/2017/03/logo_negative@2x.png') center/contain no-repeat;
@@ -10,15 +9,14 @@
     z-index: 10;
     width: rem-calc(200px);
     height: rem-calc(245px);
-    filter: drop-shadow( 0 0 .5rem $black );
-
-    @include breakpoint(medium){
+    filter: drop-shadow( 0 0 .5rem $black);
+    @include breakpoint(medium) {
         top: 50%;
         left: auto;
         right: 1vw;
         transform: translateY(-50%);
     }
-    @include breakpoint(large){
+    @include breakpoint(large) {
         right: 0;
         transform: translateY(-50%);
     }
@@ -31,7 +29,7 @@
     .wrap {
         top: 150%;
         position: relative;
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             top: 50%;
             right: 0;
             transform: translateY(-50%);
@@ -42,7 +40,7 @@
 .main-navigation {
     font-size: 1rem;
     .menu-main-menu-container .menu {
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             display: flex;
             justify-content: center;
             > li {
@@ -67,10 +65,12 @@
     }
 }
 
+
 /**
  * Don't fix the image on the start page
  * and constrain its height to match other pages.
  */
+
 .has-header-image .custom-header-media img,
 .has-header-video .custom-header-media video,
 .has-header-video .custom-header-media iframe {
@@ -94,6 +94,12 @@
 .has-header-video.home.blog .wp-custom-header {
     height: rem-calc(580px) !important;
 }
+
+.custom-header-media:before {
+    height: 100% !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
 
 .site-header .navigation-top .menu-scroll-down {
     top: -.5em;
