@@ -27,7 +27,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .contact-form label.checkbox {
-    display: flex;
+    display: flex !important;
     align-items: center;
     margin-bottom: 1rem;
     input[type="checkbox"]{
