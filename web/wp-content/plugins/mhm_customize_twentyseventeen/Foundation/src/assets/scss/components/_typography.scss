@@ -56,3 +56,10 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 .wcorg-organizer {
     padding: 2rem 0;
 }
+
+#masthead .wrap {
+    text-align: center;
+    @include breakpoint(medium){
+        text-align: left;
+    }
+}

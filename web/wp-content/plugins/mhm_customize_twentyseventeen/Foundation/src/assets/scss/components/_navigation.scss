@@ -137,6 +137,9 @@
         color: $anchor-color;
     }
     .wrap {
+        @media screen and (min-width: 40em) {
+            padding-bottom: 0;
+        }
         @media screen and (min-width: 67em) {
             padding: 0 2em;
         }
