@@ -13,5 +13,5 @@
 .archive.page-one-column:not(.has-sidebar) .page-header,
 .archive.page-one-column:not(.has-sidebar) #primary,
 .page-one-column .panel-content .wrap {
-	max-width: none; // allow the parent to constrain
+	max-width: 1000px; // allow the parent to constrain
 }
