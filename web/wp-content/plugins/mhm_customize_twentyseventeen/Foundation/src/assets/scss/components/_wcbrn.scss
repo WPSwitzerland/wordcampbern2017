@@ -8,6 +8,12 @@
     }
 }
 
+@media screen and (min-width: 48em) {
+    .panel-image {
+        height: 17.5rem;
+    }
+}
+
 .main-navigation {
     .menu-scroll-down {
         display: none;
