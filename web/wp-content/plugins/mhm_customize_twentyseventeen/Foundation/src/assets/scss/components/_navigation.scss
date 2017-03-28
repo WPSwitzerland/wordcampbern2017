@@ -22,20 +22,20 @@
 //     }
 // }
 
-// .site-branding {
-//     padding: 16rem 0 !important;
-//     top: 0;
-//     height: 100%;
-//     .wrap {
-//         top: 150%;
-//         position: relative;
-//         @include breakpoint(medium) {
-//             top: 50%;
-//             right: 0;
-//             transform: translateY(-50%);
-//         }
-//     }
-// }
+.site-branding {
+    padding: 16rem 0 !important;
+    top: 0;
+    height: 100%;
+    .wrap {
+        top: 150%;
+        position: relative;
+        @include breakpoint(medium) {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
 
 .main-navigation {
     font-size: 1rem;
