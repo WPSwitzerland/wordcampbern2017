@@ -50,7 +50,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #eb0000,
+  primary: #50afa0,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -58,7 +58,7 @@ $foundation-palette: (
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$dark-gray: rgb(30, 31, 33);
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -108,7 +108,7 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $primary-color;
 $header-lineheight: $global-lineheight;
 $header-margin-bottom: 0.5rem;
 $header-styles: (

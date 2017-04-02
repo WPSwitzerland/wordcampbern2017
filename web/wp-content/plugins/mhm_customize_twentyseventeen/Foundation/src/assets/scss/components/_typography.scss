@@ -1,3 +1,7 @@
+strong, b {
+    color: $primary-color;
+}
+
 .entry-content a,
 .entry-summary a,
 .widget a,
@@ -12,6 +16,14 @@
         box-shadow: none;
         border-bottom-color: $anchor-color-hover;
     }
+}
+
+.site-branding-text {
+    text-align: center;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+    display: block;
 }
 
 .page .panel-content .entry-title,
@@ -36,8 +48,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 body.has-header-image .site-description, body.has-header-video .site-description {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    opacity: 1;
 }
 
 .avatar {
