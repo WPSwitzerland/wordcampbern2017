@@ -1,3 +1,31 @@
+input, select, textarea {
+    font-family: inherit;
+}
+
+input[type="button"], input[type="submit"] {
+    @include button();
+}
+
+strong, b {
+    color: $primary-color;
+}
+
+q, cite {
+    font-style: italic;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.site-branding-text {
+    text-align: center;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+    display: block;
+}
+
 .entry-content a,
 .entry-summary a,
 .widget a,
@@ -36,8 +64,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 body.has-header-image .site-description, body.has-header-video .site-description {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    opacity: 1;
 }
 
 .avatar {
