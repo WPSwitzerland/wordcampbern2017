@@ -108,7 +108,7 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $primary-color;
+$header-color: darken($primary-color, 20%);
 $header-lineheight: $global-lineheight;
 $header-margin-bottom: 0.5rem;
 $header-styles: (

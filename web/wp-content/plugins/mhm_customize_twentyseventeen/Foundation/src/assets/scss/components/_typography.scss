@@ -1,5 +1,29 @@
+input, select, textarea {
+    font-family: inherit;
+}
+
+input[type="button"], input[type="submit"] {
+    @include button();
+}
+
 strong, b {
     color: $primary-color;
+}
+
+q, cite {
+    font-style: italic;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.site-branding-text {
+    text-align: center;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+    display: block;
 }
 
 .entry-content a,
@@ -16,14 +40,6 @@ strong, b {
         box-shadow: none;
         border-bottom-color: $anchor-color-hover;
     }
-}
-
-.site-branding-text {
-    text-align: center;
-}
-
-body:not(.title-tagline-hidden) .site-branding-text {
-    display: block;
 }
 
 .page .panel-content .entry-title,
