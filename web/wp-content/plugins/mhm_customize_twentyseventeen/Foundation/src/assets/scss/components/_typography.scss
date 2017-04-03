@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6 {
     color: $header-color !important;
 }
 
+p {
+    margin: $paragraph-margin-bottom;
+}
+
+img.alignleft, img.alignright {
+    margin-bottom: 1rem;
+}
+
 input, select, textarea {
     font-family: inherit;
 }
