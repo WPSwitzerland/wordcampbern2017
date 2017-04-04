@@ -124,6 +124,7 @@
         text-indent: -8000rem;
         background: center/contain no-repeat;
         height: 0;
+        position: relative;
         background-image: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-mobile.svg');
         padding-bottom: 68%;
         @include breakpoint(medium){
@@ -133,6 +134,13 @@
         @include breakpoint(large){
             background-image: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-desktop.svg');
             padding-bottom: 28%;
+        }
+        > a {
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            bottom: 0; right: 0;
+            background: rgba(255,255,255,.01); // Make sure it's clickable!
         }
     }
 }
