@@ -117,9 +117,23 @@
 }
 
 @media screen {
+    .site-description {
+        display: none;
+    }
     .site-title {
         text-indent: -8000rem;
-        background: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-desktop.svg') center/contain no-repeat;
+        background: center/contain no-repeat;
+        height: 0;
+        background-image: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-mobile.svg');
+        padding-bottom: 68%;
+        @include breakpoint(medium){
+            background-image: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-tablet.svg');
+            padding-bottom: 48%;
+        }
+        @include breakpoint(large){
+            background-image: url('https://cdn.rawgit.com/markhowellsmead/wordcampbern2017/master/web/wp-content/plugins/mhm_customize_twentyseventeen/Foundation/dist/assets/img/logo-wcbern-text-desktop.svg');
+            padding-bottom: 28%;
+        }
     }
 }
 
