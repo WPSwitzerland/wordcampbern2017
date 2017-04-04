@@ -51,7 +51,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #50afa0,
-  secondary: #767676,
+  secondary: darken(#50afa0, 20%),
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -59,8 +59,8 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: rgb(30, 31, 33);
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #111;
+$white: #fafcfa;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: Merriweather, Georgia, serif;
@@ -133,7 +133,7 @@ $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: $global-lineheight;
-$paragraph-margin-bottom: 1rem 0;
+$paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -375,12 +375,12 @@ $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
-$input-background: $white;
-$input-background-focus: $white;
+$input-background: #fff;
+$input-background-focus: #fff;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
-$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-border-focus: 1px solid $primary-color;
+$input-shadow: none; //inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;

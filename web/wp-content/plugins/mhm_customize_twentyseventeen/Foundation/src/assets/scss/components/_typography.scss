@@ -6,16 +6,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
 }
 
-p {
-    margin: $paragraph-margin-bottom;
-}
-
 img.alignleft, img.alignright {
     margin-bottom: 1rem;
 }
 
 input, select, textarea {
     font-family: inherit;
+    border-radius: $global-radius !important;
+    &:not([type="button"]):not([type="submit"]){
+        background: $input-background !important;
+        border: $input-border !important;
+        &:focus, &:active {
+            background-color: $input-background-focus !important;
+            border: $input-border-focus !important;
+        }
+    }
 }
 
 input[type="button"], input[type="submit"] {
@@ -23,7 +28,7 @@ input[type="button"], input[type="submit"] {
 }
 
 strong, b {
-    color: $primary-color;
+    color: $secondary-color;
 }
 
 q, cite {
