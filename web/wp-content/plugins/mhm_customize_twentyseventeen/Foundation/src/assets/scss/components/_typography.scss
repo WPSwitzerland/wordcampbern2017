@@ -1,37 +1,58 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $header-color !important;
 }
 
-* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
-    margin-top: 1rem;
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: 2rem;
 }
 
-img.alignleft, img.alignright {
+p {
+    margin: 1rem 0;
+}
+
+img.alignleft,
+img.alignright {
     margin-bottom: 1rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     font-family: inherit;
     border-radius: $global-radius !important;
-    &:not([type="button"]):not([type="submit"]){
+    &:not([type="button"]):not([type="submit"]) {
         background: $input-background !important;
         border: $input-border !important;
-        &:focus, &:active {
+        &:focus,
+        &:active {
             background-color: $input-background-focus !important;
             border: $input-border-focus !important;
         }
     }
 }
 
-input[type="button"], input[type="submit"] {
+input[type="button"],
+input[type="submit"] {
     @include button();
 }
 
-strong, b {
+strong,
+b {
     color: $secondary-color;
 }
 
-q, cite {
+q,
+cite {
     font-style: italic;
 }
 
@@ -70,7 +91,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
     letter-spacing: 0;
     color: $dark-gray;
     font-size: rem-calc(18px);
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
         font-size: rem-calc(36px);
     }
 }
@@ -79,12 +100,13 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
     display: flex !important;
     align-items: center;
     margin-bottom: 1rem !important;
-    input[type="checkbox"]{
+    input[type="checkbox"] {
         margin: 0 1rem 0 0;
     }
 }
 
-body.has-header-image .site-description, body.has-header-video .site-description {
+body.has-header-image .site-description,
+body.has-header-video .site-description {
     font-size: 1.5rem;
     font-weight: bold;
     opacity: 1;
@@ -110,7 +132,13 @@ body.has-header-image .site-description, body.has-header-video .site-description
 
 #masthead .wrap {
     text-align: center;
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
         text-align: left;
     }
+}
+
+.page.page-one-column .entry-header,
+.twentyseventeen-front-page.page-one-column .entry-header,
+.archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 0 !important;
 }
