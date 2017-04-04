@@ -18,6 +18,9 @@
     ul {
         background: transparent;
     }
+    .menu-scroll-down {
+        display: none;
+    }
     .menu-main-menu-container .menu {
         @include breakpoint(medium) {
             display: flex;
@@ -100,6 +103,7 @@
 
 .site-branding {
     margin: 0 !important;
+    padding: 1rem 0 !important;
     top: 0;
     height: 100%;
     .wrap {
@@ -111,8 +115,8 @@
             transform: translateY(-50%);
         }
     }
-    @include breakpoint(xlarge) {
-        padding: 16rem 0 !important;
+    @include breakpoint(medium) {
+        padding: 0 !important;
     }
 }
 
@@ -145,34 +149,22 @@
     }
 }
 
-.has-header-image.twentyseventeen-front-page .custom-header,
-.has-header-video.twentyseventeen-front-page .custom-header,
-.has-header-image.home.blog .custom-header,
-.has-header-video.home.blog .custom-header,
-.has-header-image.twentyseventeen-front-page .custom-header-media,
-.has-header-video.twentyseventeen-front-page .custom-header-media,
-.has-header-image.home.blog .custom-header-media,
-.has-header-video.home.blog .custom-header-media,
-.has-header-image.twentyseventeen-front-page .wp-custom-header,
-.has-header-video.twentyseventeen-front-page .wp-custom-header,
-.has-header-image.home.blog .wp-custom-header,
-.has-header-video.home.blog .wp-custom-header {
+.has-header-image .custom-header,
+.has-header-video .custom-header,
+.has-header-image .custom-header-media,
+.has-header-video .custom-header-media,
+.has-header-image .wp-custom-header,
+.has-header-video .wp-custom-header {
     height: 100% !important;
     @include breakpoint(medium) {
         height: 36.25rem !important;
     }
-}
 
-.site-header .navigation-top .menu-scroll-down {
-    top: -.5em;
-    color: $body-background;
-}
+    img, video, iframe {
+        position: static;
+        height: auto !important;
+    }
 
-.has-header-image .custom-header-media img,
-.has-header-video .custom-header-media video,
-.has-header-video .custom-header-media iframe {
-    position: static;
-    height: auto !important;
 }
 
 .has-header-image .custom-header-media img {
