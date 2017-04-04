@@ -120,6 +120,10 @@
     .site-branding-text {
         opacity: 0;
     }
+    .site-title {
+        text-indent: -8000rem;
+        background: url('../img/logo-wcbern-text-desktop.svg') center/contain no-repeat;
+    }
 }
 
 .has-header-image.twentyseventeen-front-page .custom-header,
