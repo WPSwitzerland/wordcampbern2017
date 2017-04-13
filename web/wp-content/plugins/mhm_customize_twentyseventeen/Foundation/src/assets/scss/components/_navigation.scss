@@ -129,10 +129,6 @@
     .social-navigation a, .social-navigation a:hover {
         background-color: $white;
         color: $primary-color;
-        position: relative;
-    }
-    .social-navigation a:hover {
-        top: -.1rem;
     }
     .site-description {
         display: none;
