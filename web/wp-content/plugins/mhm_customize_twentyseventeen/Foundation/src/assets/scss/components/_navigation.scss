@@ -118,7 +118,7 @@
 @media screen {
     .custom-header-media:before {
         height: 100% !important;
-        background: linear-gradient(to right, rgba($primary-color, .8), rgba($white, 0.8) 50%, rgba($primary-color, 0.8)) !important
+        background: radial-gradient(ellipse, rgba($white, 1) 0%, rgba($primary-color, .8) 100%);
     }
 
     .site-info a {
@@ -185,6 +185,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        filter: contrast(2);
     }
 }
 

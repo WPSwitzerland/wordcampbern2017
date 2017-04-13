@@ -51,18 +51,18 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #50afa0,
-  secondary: darken(#50afa0, 20%),
+  secondary: #495057,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: rgb(30, 31, 33);
+$dark-gray: #495057;
 $black: #111;
 $white: #fafcfa;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $dark-gray;
 $body-font-family: Merriweather, Georgia, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -108,7 +108,7 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: darken($primary-color, 20%);
+$header-color: $primary-color;
 $header-lineheight: $global-lineheight;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
