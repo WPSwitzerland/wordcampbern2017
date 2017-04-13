@@ -19,7 +19,8 @@
     .menu-main-menu-container .menu {
         @include breakpoint(medium) {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
+            padding-left: 1rem;
             > li {
                 display: inline-block;
                 position: relative;
