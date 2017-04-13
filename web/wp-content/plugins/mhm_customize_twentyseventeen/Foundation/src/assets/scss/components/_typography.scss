@@ -5,6 +5,9 @@ h4,
 h5,
 h6 {
     color: $header-color !important;
+    .site-footer & {
+        color: $dark-gray !important;
+    }
 }
 
 * + h1,
