@@ -120,6 +120,8 @@
     .custom-header-media:before {
         height: 100% !important;
         background: radial-gradient(ellipse, rgba($white, 1) 0%, rgba($primary-color, .8) 100%);
+        background-size: 100% 200%;
+        background-position: center;
     }
 
     .site-info a {
