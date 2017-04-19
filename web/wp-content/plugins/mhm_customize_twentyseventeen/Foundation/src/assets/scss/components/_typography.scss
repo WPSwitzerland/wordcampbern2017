@@ -152,4 +152,11 @@ body.has-header-video .site-description {
 
 thead th {
     border-color: $primary-color;
+    text-align: left;
+}
+
+.tix-row-coupon td {
+    @include breakpoint(medium down){
+        text-align: left !important;
+    }
 }
