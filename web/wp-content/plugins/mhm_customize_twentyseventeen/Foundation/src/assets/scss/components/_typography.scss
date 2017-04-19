@@ -149,3 +149,7 @@ body.has-header-video .site-description {
 .archive.page-one-column:not(.has-sidebar) .page-header {
     margin-bottom: 0 !important;
 }
+
+thead th {
+    border-color: $primary-color;
+}
