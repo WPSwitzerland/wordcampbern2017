@@ -351,7 +351,7 @@ $dropdownmenu-border: 1px solid $medium-gray;
 // 19. Forms
 // ---------
 
-$fieldset-border: 1px solid $medium-gray;
+$fieldset-border: 1px solid $medium-gray !important;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
@@ -361,15 +361,15 @@ $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
-$input-prefix-border: 1px solid $medium-gray;
+$input-prefix-border: 1px solid $medium-gray !important;
 $input-prefix-padding: 1rem;
 $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-$select-background: $white;
+$select-background: #fff;
 $select-triangle-color: $dark-gray;
-$select-radius: $global-radius;
+$select-radius: $global-radius !important;
 $input-color: $black;
 $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
@@ -378,15 +378,15 @@ $input-font-weight: $global-weight-normal;
 $input-background: #fff;
 $input-background-focus: #fff;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
+$input-border: 1px solid $medium-gray !important;
 $input-border-focus: 1px solid $primary-color;
 $input-shadow: none; //inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
-$input-radius: $global-radius;
-$form-button-radius: $global-radius;
+$input-radius: $global-radius !important;
+$form-button-radius: $global-radius !important;
 
 // 20. Label
 // ---------
