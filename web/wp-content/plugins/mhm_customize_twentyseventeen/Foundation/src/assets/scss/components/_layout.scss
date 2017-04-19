@@ -9,3 +9,13 @@
 .site-content-contain {
     background-color: transparent;
 }
+
+.location-split {
+	@include breakpoint(medium){
+		display: flex;
+	}
+}
+
+.location-map {
+	flex: 2;
+}
