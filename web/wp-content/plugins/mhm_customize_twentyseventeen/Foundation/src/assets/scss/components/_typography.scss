@@ -126,9 +126,11 @@ body.has-header-video .site-description {
 }
 
 #masthead .wrap {
+    position: static;
     text-align: center;
     @include breakpoint(medium) {
         text-align: left;
+        position: relative;
     }
 }
 
