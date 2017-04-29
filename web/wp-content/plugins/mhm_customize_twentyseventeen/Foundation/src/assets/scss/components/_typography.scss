@@ -161,4 +161,15 @@ select {
 
 #tix-attendees li {
     margin-bottom: $global-margin * 2 !important;
+    font-size: 1rem !important;
+}
+
+#tix-attendees li a {
+    font-size: .875rem;
+}
+
+#tix-attendees li:after {
+    content: '';
+    display: table;
+    clear: both;
 }
