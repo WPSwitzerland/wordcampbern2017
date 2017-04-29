@@ -154,3 +154,13 @@ thead th {
 select {
     background-image: url('https://wpbern.ch/wp-content/uploads/wcbern/downarrow.svg');
 }
+
+#tix-attendees .avatar {
+    width: 4.5rem;
+    height: auto;
+    float: right;
+}
+
+#tix-attendees li {
+    margin-bottom: $global-margin * 2 !important;
+}
