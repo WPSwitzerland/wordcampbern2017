@@ -83,11 +83,11 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .widget_authors a strong {
     color: $anchor-color;
     box-shadow: none;
-    border-bottom: 1px solid $anchor-color;
+    // border-bottom: 1px solid $anchor-color;
     &:hover {
         color: $anchor-color-hover;
         box-shadow: none;
-        border-bottom-color: $anchor-color-hover;
+        // border-bottom-color: $anchor-color-hover;
     }
 }
 
@@ -159,4 +159,14 @@ thead th {
     @include breakpoint(medium down){
         text-align: left !important;
     }
+}
+
+#tix-attendees .avatar {
+    width: 4.5rem;
+    height: auto;
+    float: right;
+}
+
+#tix-attendees li {
+    margin-bottom: $global-margin * 2 !important;
 }

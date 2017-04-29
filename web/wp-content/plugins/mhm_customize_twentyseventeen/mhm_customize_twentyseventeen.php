@@ -38,6 +38,7 @@ class MhmCustomizeTwentyseventeen
     public function enqueue()
     {
         wp_enqueue_style('wcbrn', plugins_url('Foundation/dist/assets/css/app.css', __FILE__), array('twentyseventeen-style'));
+        wp_enqueue_style('camptix', 'https://2017.bern.wordcamp.org/wp-content/plugins/camptix/camptix.css?ver=20150311', array('twentyseventeen-style', 'wcbrn'));
     }
 }
 
