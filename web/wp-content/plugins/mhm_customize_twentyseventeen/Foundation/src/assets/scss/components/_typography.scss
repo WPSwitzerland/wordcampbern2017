@@ -156,7 +156,14 @@ select {
 #tix-attendees .avatar {
     width: 4.5rem;
     height: auto;
-    float: right;
+}
+
+#tix-attendees .tix-field {
+    margin-left: 5.5rem !important;
+}
+
+#tix-attendees .tix-attendee-name {
+    font-weight: bold;
 }
 
 #tix-attendees li {
