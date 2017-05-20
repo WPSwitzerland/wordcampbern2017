@@ -16,21 +16,21 @@ $bronze:    #8c7853;
 
     .wcorg-sponsor-level-gold {
         h2 {
-            background: $gold;
+            border-bottom: .25rem solid $gold;
         }
     }
 
     .wcorg-sponsor-level-silver {
         font-size: 90%;
         h2 {
-            background: $silver;
+            border-bottom: .25rem solid $silver;
         }
     }
 
     .wcorg-sponsor-level-bronze {
         font-size: 85%;
         h2 {
-            background: $bronze;
+            border-bottom: .25rem solid $bronze;
         }
     }
 
@@ -68,9 +68,18 @@ $bronze:    #8c7853;
             }
         }
 
-        .wcorg-sponsor-level-micro .wcorg-sponsor-description {
-            img {
-                width: 20%;
+        .wcorg-sponsor-level-micro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .wcorg-sponsor {
+                flex-basis: 20%;
+            }
+            .wcorg-sponsor-description {
+                img {
+                    width: 100%;
+                    float: none;
+                }
             }
         }
     }
