@@ -6,6 +6,7 @@ $bronze:    #8c7853;
 
     h2 {
         padding: 1rem;
+        margin: 1rem 0;
         color: $white !important;
     }
 
@@ -55,14 +56,23 @@ $bronze:    #8c7853;
             }
         }
 
-        // .wcorg-sponsor-level-gold .wcorg-sponsor-description {
-        //     img {
-        //         width: 45%;
-        //     }
-        //     > *:not(img){
-        //         margin-left: 50%;
-        //     }
-        // }
+        .wcorg-sponsor-level-silver .wcorg-sponsor-description {
+            img {
+                width: 25%;
+            }
+        }
+
+        .wcorg-sponsor-level-bronze .wcorg-sponsor-description {
+            img {
+                width: 22.5%;
+            }
+        }
+
+        .wcorg-sponsor-level-micro .wcorg-sponsor-description {
+            img {
+                width: 20%;
+            }
+        }
     }
 
 }
