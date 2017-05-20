@@ -6,8 +6,7 @@ $bronze:    #8c7853;
 
     h2 {
         padding: 1rem;
-        margin: 1rem 0;
-        color: $white !important;
+        margin: 2rem 0;
     }
 
     h3 {
@@ -16,6 +15,7 @@ $bronze:    #8c7853;
 
     .wcorg-sponsor-level-gold {
         h2 {
+            color: $gold;
             border-bottom: .25rem solid $gold;
         }
     }
@@ -23,6 +23,7 @@ $bronze:    #8c7853;
     .wcorg-sponsor-level-silver {
         font-size: 90%;
         h2 {
+            color: $silver;
             border-bottom: .25rem solid $silver;
         }
     }
@@ -30,12 +31,13 @@ $bronze:    #8c7853;
     .wcorg-sponsor-level-bronze {
         font-size: 85%;
         h2 {
+            color: $bronze;
             border-bottom: .25rem solid $bronze;
         }
     }
 
     .wcorg-sponsor-level-micro h2 {
-        background: $primary-color;
+        border-bottom: .25rem solid $primary-color;
     }
 
     @include breakpoint(medium){
@@ -72,6 +74,9 @@ $bronze:    #8c7853;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            h2 {
+                flex-basis: 100%;
+            }
             .wcorg-sponsor {
                 flex-basis: 20%;
             }
