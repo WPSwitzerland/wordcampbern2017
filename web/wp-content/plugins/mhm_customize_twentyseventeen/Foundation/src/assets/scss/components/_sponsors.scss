@@ -117,5 +117,15 @@ $bronze:    #8c7853;
                 flex-basis: 100%;
             }
         }
+        .wcorg-sponsor-level-bronze {
+            .wcorg-sponsor {
+                flex-basis: 32%;
+            }
+        }
+        .wcorg-sponsor-level-micro {
+            .wcorg-sponsor {
+                flex-basis: 24%;
+            }
+        }
     }
 }
