@@ -105,9 +105,13 @@ $bronze:    #8c7853;
     [class*="wcorg-sponsor-level"] {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        alig-items: center;
         .wcorg-sponsor {
-            flex-basis: 50%;
+            flex-basis: 48%;
+        }
+        h2 {
+            flex-basis: 100%;
         }
     }
 
