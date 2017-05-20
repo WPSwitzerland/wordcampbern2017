@@ -13,16 +13,24 @@ $bronze:    #8c7853;
         display: none;
     }
 
-    .wcorg-sponsor-level-gold h2 {
-        background: $gold;
+    .wcorg-sponsor-level-gold {
+        h2 {
+            background: $gold;
+        }
     }
 
-    .wcorg-sponsor-level-silver h2 {
-        background: $silver;
+    .wcorg-sponsor-level-silver {
+        font-size: 90%;
+        h2 {
+            background: $silver;
+        }
     }
 
-    .wcorg-sponsor-level-bronze h2 {
-        background: $bronze;
+    .wcorg-sponsor-level-bronze {
+        font-size: 85%;
+        h2 {
+            background: $bronze;
+        }
     }
 
     .wcorg-sponsor-level-micro h2 {
@@ -43,7 +51,7 @@ $bronze:    #8c7853;
                 width: 30%;
             }
             > *:not(img){
-                margin-left: 60%;
+                margin-left: 35%;
             }
         }
 
