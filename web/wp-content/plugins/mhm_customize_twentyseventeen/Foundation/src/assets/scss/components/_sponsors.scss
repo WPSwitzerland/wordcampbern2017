@@ -5,7 +5,7 @@ $bronze:    #8c7853;
 .wcorg-sponsors {
 
     h2 {
-        padding: 1rem;
+        padding: 1rem 0;
         margin: 2rem 0;
     }
 
@@ -15,7 +15,7 @@ $bronze:    #8c7853;
 
     .wcorg-sponsor-level-gold {
         h2 {
-            color: $gold;
+            color: $gold !important;
             border-bottom: .25rem solid $gold;
         }
     }
@@ -23,7 +23,7 @@ $bronze:    #8c7853;
     .wcorg-sponsor-level-silver {
         font-size: 90%;
         h2 {
-            color: $silver;
+            color: $silver !important;
             border-bottom: .25rem solid $silver;
         }
     }
@@ -31,7 +31,7 @@ $bronze:    #8c7853;
     .wcorg-sponsor-level-bronze {
         font-size: 85%;
         h2 {
-            color: $bronze;
+            color: $bronze !important;
             border-bottom: .25rem solid $bronze;
         }
     }
