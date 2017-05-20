@@ -90,3 +90,25 @@ $bronze:    #8c7853;
     }
 
 }
+
+.home .wcorg-sponsors {
+    .wcorg-sponsor-description {
+        img {
+            float: none;
+            width: auto;
+        }
+        > *:not(img){
+            display: none;
+        }
+    }
+
+    [class*="wcorg-sponsor-level"] {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .wcorg-sponsor {
+            flex-basis: 50%;
+        }
+    }
+
+}
