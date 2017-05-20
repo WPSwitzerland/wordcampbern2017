@@ -1,0 +1,69 @@
+$gold:      #cfb53b;
+$silver:    silver;
+$bronze:    #8c7853;
+
+.wcorg-sponsors {
+
+    h2 {
+        padding: 1rem;
+        color: $white;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .wcorg-sponsor-level-gold h2 {
+        background: $gold;
+    }
+
+    .wcorg-sponsor-level-gold .wcorg-sponsor {
+        width: 49.6%;
+    }
+
+    .wcorg-sponsor-level-silver h2 {
+        background: $silver;
+    }
+
+    .wcorg-sponsor-level-silver .wcorg-sponsor {
+        width: 33%;
+    }
+
+    .wcorg-sponsor-level-bronze h2 {
+        background: $bronze;
+    }
+
+    .wcorg-sponsor-level-bronze .wcorg-sponsor {
+        width: 25%;
+        height: 70px;
+    }
+
+    .wcorg-sponsor-level-micro h2 {
+        background: $primary-color;
+    }
+
+    .wcorg-sponsor-level-micro .wcorg-sponsor {
+        width: 20%;
+    }
+
+    @include breakpoint(medium){
+        .wcorg-sponsor-description {
+            img {
+                float: left;
+                width: 30%;
+            }
+            > *:not(img){
+                margin-left: 60%;
+            }
+        }
+        .wcorg-sponsor-level-gold .wcorg-sponsor-description {
+            img {
+                width: 45%;
+            }
+            > *:not(img){
+                margin-left: 50%;
+            }
+        }
+    }
+
+}
