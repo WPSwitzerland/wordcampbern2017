@@ -49,6 +49,11 @@ $bronze:    #8c7853;
         }
 
         .wcorg-sponsor-description {
+
+            a img {
+                box-shadow: none;
+            }
+
             > a, > img {
                 float: left;
                 width: 30%;
