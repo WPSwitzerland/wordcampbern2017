@@ -155,6 +155,16 @@ select {
     background-image: url('https://wpbern.ch/wp-content/uploads/wcbern/downarrow.svg');
 }
 
+#tix-attendees .tix-columns-3 li {
+    width: 100% !important;
+    @include breakpoint(medium){
+        width: 50% !important;
+    }
+    @include breakpoint(large){
+        width: 33.333% !important;
+    }
+}
+
 #tix-attendees .avatar {
     width: 4.5rem;
     height: auto;
