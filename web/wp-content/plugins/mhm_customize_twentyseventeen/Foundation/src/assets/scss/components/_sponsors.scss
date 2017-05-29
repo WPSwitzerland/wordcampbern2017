@@ -108,11 +108,11 @@ $bronze:    #8c7853;
 
 .home .wcorg-sponsors {
     .wcorg-sponsor-description {
-        img {
+        > img, > a {
             float: none;
             width: auto;
         }
-        > *:not(img){
+        > *:not(img):not(a){
             display: none;
         }
     }
