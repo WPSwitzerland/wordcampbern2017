@@ -4,6 +4,10 @@ $bronze:    #8c7853;
 
 .wcorg-sponsors {
 
+    // https://github.com/WPSwitzerland/wordcampbern2017/issues/7
+    background: #fff;
+    box-shadow: -750px 0 0 0 #fff, 750px 0 0 0 #fff; /* left/right overflow */
+
     h2 {
         padding: 1rem 0;
         margin: 2rem 0;
@@ -50,6 +54,8 @@ $bronze:    #8c7853;
 
         .wcorg-sponsor-description {
 
+            text-align: center;
+
             a img {
                 box-shadow: none;
             }
@@ -61,6 +67,7 @@ $bronze:    #8c7853;
             > a img {
                 float: none;
                 width: auto;
+                max-height: 3.875rem;
             }
             > *:not(a):not(img){
                 margin-left: 35%;
@@ -93,7 +100,11 @@ $bronze:    #8c7853;
                 flex-basis: 100%;
             }
             .wcorg-sponsor {
-                flex-basis: 20%;
+                flex-basis: 50%;
+                margin: 0 1rem 0 0;
+                &:nth-child(2n){
+                    margin: 0 0 0 1rem;
+                }
             }
             .wcorg-sponsor-description {
                 > a, > img {
@@ -121,7 +132,7 @@ $bronze:    #8c7853;
         [class*="wcorg-sponsor-level"] {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             .wcorg-sponsor {
                 flex-basis: 46%;
