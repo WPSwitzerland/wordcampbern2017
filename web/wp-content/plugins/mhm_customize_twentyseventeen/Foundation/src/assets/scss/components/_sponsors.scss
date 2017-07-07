@@ -40,8 +40,11 @@ $bronze:    #8c7853;
         }
     }
 
-    .wcorg-sponsor-level-micro h2 {
-        border-bottom: .25rem solid $primary-color;
+    .wcorg-sponsor-level-micro {
+        font-size: 80%;
+        h2 {
+            border-bottom: .25rem solid $primary-color;
+        }
     }
 
     @include breakpoint(medium){
@@ -54,12 +57,16 @@ $bronze:    #8c7853;
 
         .wcorg-sponsor-description {
 
+            margin-bottom: 2rem;
+
             a img {
                 box-shadow: none;
             }
 
             > a {
                 display: block;
+                text-align: center;
+                margin: 1rem 0 2rem;
             }
 
             > a, > img {
@@ -111,11 +118,12 @@ $bronze:    #8c7853;
             .wcorg-sponsor {
                 flex-basis: calc(50% - 1rem);
                 margin: 0 0 0 1rem;
-                &:nth-child(2n){
+                &:nth-of-type(2n){
                     margin: 0 1rem 0 0;
                 }
             }
             .wcorg-sponsor-description {
+                margin-bottom: 2rem;
                 > a, > img {
                     width: 100%;
                     float: none;
