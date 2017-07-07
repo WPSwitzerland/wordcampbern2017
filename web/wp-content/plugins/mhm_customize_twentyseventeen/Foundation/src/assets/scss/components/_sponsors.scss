@@ -113,6 +113,9 @@ $bronze:    #8c7853;
                     width: 100%;
                     float: none;
                 }
+                > *:not(a):not(img){
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -146,7 +149,6 @@ $bronze:    #8c7853;
                 &:nth-child(2n){
                     margin: 0 1rem 2rem 0;
                 }
-
             }
             h2 {
                 flex-basis: 100%;
@@ -159,7 +161,11 @@ $bronze:    #8c7853;
         }
         .wcorg-sponsor-level-micro {
             .wcorg-sponsor {
-                flex-basis: 24%;
+                flex-basis: calc(25% - 2rem);
+                margin: 0 1rem 2rem;
+                &:nth-child(2n){
+                    margin: 0 0 2rem;
+                }
             }
         }
     }
