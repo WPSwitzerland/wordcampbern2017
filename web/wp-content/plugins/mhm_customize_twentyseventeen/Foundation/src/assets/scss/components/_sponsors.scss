@@ -138,10 +138,15 @@ $bronze:    #8c7853;
             justify-content: center;
             align-items: center;
             .wcorg-sponsor {
-                flex-basis: 46%;
+                flex-basis: calc(45% - 1rem);
                 display: flex;
                 align-items: center;
-                margin-bottom: 1rem;
+                justify-content: center;
+                margin: 0 1rem 2rem 0;
+                &:nth-child(2n){
+                    margin: 0 0 2rem 1rem;
+                }
+
             }
             h2 {
                 flex-basis: 100%;
