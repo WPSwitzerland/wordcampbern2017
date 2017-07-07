@@ -76,7 +76,14 @@ $bronze:    #8c7853;
             }
         }
 
+        .wcorg-sponsor-level-gold .wcorg-sponsor-description {
+            > a img {
+                max-height: none;
+            }
+        }
+
         .wcorg-sponsor-level-silver .wcorg-sponsor-description {
+
             > a, > img {
                 width: 25%;
             }
@@ -103,9 +110,9 @@ $bronze:    #8c7853;
             }
             .wcorg-sponsor {
                 flex-basis: calc(50% - 1rem);
-                margin: 0 1rem 0 0;
+                margin: 0 0 0 1rem;
                 &:nth-child(2n){
-                    margin: 0 0 0 1rem;
+                    margin: 0 1rem 0 0;
                 }
             }
             .wcorg-sponsor-description {
