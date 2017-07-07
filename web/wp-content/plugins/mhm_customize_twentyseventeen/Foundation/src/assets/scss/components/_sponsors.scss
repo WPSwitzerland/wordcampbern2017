@@ -54,10 +54,12 @@ $bronze:    #8c7853;
 
         .wcorg-sponsor-description {
 
-            text-align: center;
-
             a img {
                 box-shadow: none;
+            }
+
+            > a {
+                display: block;
             }
 
             > a, > img {
@@ -100,7 +102,7 @@ $bronze:    #8c7853;
                 flex-basis: 100%;
             }
             .wcorg-sponsor {
-                flex-basis: 50%;
+                flex-basis: calc(50% - 1rem);
                 margin: 0 1rem 0 0;
                 &:nth-child(2n){
                     margin: 0 0 0 1rem;
@@ -119,6 +121,7 @@ $bronze:    #8c7853;
 
 .home .wcorg-sponsors {
     .wcorg-sponsor-description {
+        text-align: center;
         > img, > a {
             float: none;
             width: auto;
