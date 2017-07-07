@@ -57,8 +57,6 @@ $bronze:    #8c7853;
 
         .wcorg-sponsor-description {
 
-            margin-bottom: 2rem;
-
             a img {
                 box-shadow: none;
             }
@@ -84,6 +82,9 @@ $bronze:    #8c7853;
         }
 
         .wcorg-sponsor-level-gold .wcorg-sponsor-description {
+            > a {
+                margin: 0;
+            }
             > a img {
                 max-height: none;
             }
@@ -116,7 +117,7 @@ $bronze:    #8c7853;
                 flex-basis: 100%;
             }
             .wcorg-sponsor {
-                flex-basis: calc(50% - 1rem);
+                flex-basis: calc(50% - 2rem);
                 margin: 0 1rem;
             }
             .wcorg-sponsor-description {
