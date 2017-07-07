@@ -117,13 +117,11 @@ $bronze:    #8c7853;
             }
             .wcorg-sponsor {
                 flex-basis: calc(50% - 1rem);
-                margin: 0 0 0 1rem;
-                &:nth-of-type(2n){
-                    margin: 0 1rem 0 0;
-                }
+                margin: 0 1rem;
             }
             .wcorg-sponsor-description {
                 margin-bottom: 2rem;
+                text-align: center;
                 > a, > img {
                     width: 100%;
                     float: none;
