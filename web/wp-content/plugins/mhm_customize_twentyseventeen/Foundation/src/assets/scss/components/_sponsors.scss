@@ -40,7 +40,7 @@ $bronze:    #8c7853;
         }
     }
 
-    .wcorg-sponsor-level-micro {
+    .wcorg-sponsor-level-micro, .wcorg-sponsor-level-in-kind {
         font-size: 80%;
         h2 {
             border-bottom: .25rem solid $primary-color;
@@ -64,7 +64,7 @@ $bronze:    #8c7853;
             > a {
                 display: block;
                 text-align: center;
-                margin: 1rem 0 2rem;
+                margin: 0;
             }
 
             > a, > img {
@@ -100,7 +100,7 @@ $bronze:    #8c7853;
             }
         }
 
-        .wcorg-sponsor-level-bronze .wcorg-sponsor-description {
+        .wcorg-sponsor-level-bronze .wcorg-sponsor-description, .wcorg-sponsor-level-in-kind .wcorg-sponsor-description {
             > a, > img {
                 width: 22.5%;
             }
@@ -168,7 +168,7 @@ $bronze:    #8c7853;
                 flex-basis: 100%;
             }
         }
-        .wcorg-sponsor-level-bronze {
+        .wcorg-sponsor-level-bronze, .wcorg-sponsor-level-in-kind {
             .wcorg-sponsor {
                 flex-basis: 32%;
             }
