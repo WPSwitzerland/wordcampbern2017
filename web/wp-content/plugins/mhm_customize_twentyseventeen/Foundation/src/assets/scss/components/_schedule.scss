@@ -1,3 +1,20 @@
+.page-slug-schedule .entry-content {
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+span.wcpt-session-speakers {
+    padding-left: 0;
+    font-size: 85%;
+    font-style: italic;
+}
+
+.wcpt-session-title {
+    padding: 0;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 700px) {
 
     .wcpt-schedule tr {
@@ -12,22 +29,11 @@
         margin-bottom: 2rem;
     }
 
-    .wcpt-session-title {
-        padding: 0;
-        font-weight: 600;
-    }
-
     .wcpt-session-type-session:before {
         padding: .5rem 0;
         margin: 1rem 0 0;
         font-size: 80%;
         border: none;
-    }
-
-    span.wcpt-session-speakers {
-    	padding-left: 0;
-    	font-size: 85%;
-    	font-style: italic;
     }
 
     span.wcpt-session-speakers:before {
@@ -38,10 +44,4 @@
     	color: $primary-color;
     }
 
-}
-
-.page-slug-schedule .entry-content {
-	h1, h2, h3, h4, h5, h6 {
-		border-bottom: 1px solid $primary-color;
-	}
 }
