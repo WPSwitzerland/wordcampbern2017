@@ -22,7 +22,7 @@
     .menu-main-menu-container .menu {
         @include breakpoint(medium) {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             padding-left: 1rem;
             > li {
                 display: inline-block;
