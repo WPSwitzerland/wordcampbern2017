@@ -1,15 +1,20 @@
 @media screen and (max-width: 700px) {
 
     .wcpt-schedule tr {
-        border-color: $primary-color;
+        border: none;
     }
 
     .wcpt-schedule td {
-        padding: .25rem;
+        padding: 0;
+    }
+
+    .wcpt-schedule td:last-child {
+        margin-bottom: 2rem;
     }
 
     .wcpt-session-title {
         padding: 0;
+        font-weight: 600;
     }
 
     .wcpt-session-type-session:before {
@@ -21,15 +26,11 @@
         border: none;
     }
 
-    span.wcpt-session-speakers:before {
-    	display: none;
-    }
-
-    .wcpt-session-speakers {
+    span.wcpt-session-speakers {
     	padding-left: 0;
     }
 
-    .wcpt-session-speakers:before {
+    span.wcpt-session-speakers:before {
     	display: none;
     }
 
