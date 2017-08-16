@@ -21,17 +21,21 @@
         padding: .5rem 0;
         margin: 1rem 0 0;
         font-size: 80%;
-        color: $white;
-        background-color: $primary-color;
         border: none;
     }
 
     span.wcpt-session-speakers {
     	padding-left: 0;
+    	font-size: 85%;
+    	font-style: italic;
     }
 
     span.wcpt-session-speakers:before {
     	display: none;
+    }
+
+    span.wcpt-session-speakers a {
+    	color: $primary-color;
     }
 
 }
