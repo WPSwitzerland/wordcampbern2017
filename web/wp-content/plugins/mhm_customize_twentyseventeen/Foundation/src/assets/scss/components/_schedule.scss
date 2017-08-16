@@ -1,3 +1,30 @@
+.page-slug-schedule .entry-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+span.wcpt-session-speakers {
+    display: block;
+    padding-left: 0;
+    font-size: 85%;
+    font-style: italic;
+}
+
+.wcpt-session-title {
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        text-decoration: initial;
+    }
+}
+
 @media (max-width: 700px) {
 
     .wcpt-schedule tr {
@@ -20,40 +47,24 @@
     }
 
     span.wcpt-session-speakers:before {
-    	display: none;
+        display: none;
     }
 
     span.wcpt-session-speakers a {
-    	color: $primary-color;
-    }
-
-}
-
-.wcpt-schedule {
-    tbody tr:nth-child(even){
-        background: rgba($primary-color, .05);
+        color: $primary-color;
     }
 }
 
-.page-slug-schedule .entry-content {
-    h1, h2, h3, h4, h5, h6 {
-        border-bottom: 1px solid $primary-color;
+@media (min-width: 768px) {
+    .wcpt-schedule {
+        tbody tr {
+            td {
+                padding-left: .25rem;
+                padding-right: .25rem;
+            }
+            &:nth-child(even) {
+                background: rgba($primary-color, .1);
+            }
+        }
     }
 }
-
-span.wcpt-session-speakers {
-    display: block;
-    padding-left: 0;
-    font-size: 85%;
-    font-style: italic;
-}
-
-.wcpt-session-title {
-    padding: 0;
-    font-weight: 600;
-    text-decoration: none;
-    &:hover {
-        text-decoration: initial;
-    }
-}
-
