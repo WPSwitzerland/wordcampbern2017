@@ -36,6 +36,7 @@
 }
 
 span.wcpt-session-speakers {
+    display: block;
     padding-left: 0;
     font-size: 85%;
     font-style: italic;
@@ -44,5 +45,9 @@ span.wcpt-session-speakers {
 .wcpt-session-title {
     padding: 0;
     font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        text-decoration: initial;
+    }
 }
 
