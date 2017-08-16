@@ -1,21 +1,4 @@
-.page-slug-schedule .entry-content {
-    h1, h2, h3, h4, h5, h6 {
-        border-bottom: 1px solid $primary-color;
-    }
-}
-
-span.wcpt-session-speakers {
-    padding-left: 0;
-    font-size: 85%;
-    font-style: italic;
-}
-
-.wcpt-session-title {
-    padding: 0;
-    font-weight: 600;
-}
-
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
 
     .wcpt-schedule tr {
         border: none;
@@ -45,3 +28,21 @@ span.wcpt-session-speakers {
     }
 
 }
+
+.page-slug-schedule .entry-content {
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+span.wcpt-session-speakers {
+    padding-left: 0;
+    font-size: 85%;
+    font-style: italic;
+}
+
+.wcpt-session-title {
+    padding: 0;
+    font-weight: 600;
+}
+
