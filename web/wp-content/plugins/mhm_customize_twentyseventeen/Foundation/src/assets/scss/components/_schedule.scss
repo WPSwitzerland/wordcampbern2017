@@ -1,0 +1,24 @@
+@media screen and (max-width: 700px) {
+
+    .wcpt-schedule tr {
+        border-color: $primary-color;
+    }
+
+    .wcpt-schedule td {
+        padding: 0;
+    }
+
+    .wcpt-session-title {
+        padding: 0;
+    }
+
+    .wcpt-session-type-session:before {
+        padding: .5rem 0;
+        margin: 1rem 0 0;
+        font-size: 80%;
+        color: $white;
+        background-color: $primary-color;
+        border: none;
+    }
+
+}
