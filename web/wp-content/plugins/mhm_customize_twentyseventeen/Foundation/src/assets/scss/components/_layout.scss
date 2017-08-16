@@ -24,3 +24,13 @@
 .location-map {
 	flex: 2;
 }
+
+
+.single-wcb_speaker .speaker-avatar {
+	float: left;
+	margin: 0 1rem .5rem 0;
+}
+
+.single-wcb_speaker .speaker-avatar + p {
+	margin-top: 0;
+}
