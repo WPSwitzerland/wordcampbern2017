@@ -95,6 +95,12 @@
         background-color: rgba($body-background, .85);
         box-shadow: 0 0.125rem 0.125rem rgba($black, 0.2);
     }
+
+    @media screen and (min-width:768px) and (max-width: 1200px){
+        .nav {
+            font-size: .8rem;
+        }
+    }
 }
 
 .site-branding {
